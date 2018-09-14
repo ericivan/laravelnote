@@ -292,4 +292,4 @@ class AuthServiceProvider extends ServiceProvider
     
 ```
 
-#####
+#####上面这些方法都是我直接查源码的时候翻到的，有时候还是得自己一步一步看下去，文档毕竟说的不是特别全面，坑就挖到这里了
