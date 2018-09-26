@@ -61,7 +61,9 @@ class CreateCustomLogger
 > 这里需要注意几点
 
 1.php 7新的mongodb拓展，github源码https://github.com/mongodb/mongo-php-driver 自行编译
+
 2. mongodb 官方的一个适配器，https://github.com/mongodb/mongo-php-library  这个是因为MongoDBHandler Client的class类型，包会适配旧版mongodb 库的方法
+
 3.这是 monolog 的具体文档，里面有些具体的handler，formatter，processor，还可以自行定义 https://github.com/Seldaek/monolog/tree/master/doc
 > 测试
 
