@@ -13,7 +13,7 @@
 ```
 
 > 注意的是，一定要是custom，写成其他不行哦，至于为什么，是因为源码里面适配了一个driver的方法，createCustomDriver(),有兴趣的朋友可以自己去
-翻源码看
+> 翻源码看
 
 
 
@@ -58,4 +58,15 @@ class CreateCustomLogger
 
 ```
 
-> 这里需要注意几点。
+> 这里需要注意几点
+
+1.php 7新的mongodb拓展，github源码https://github.com/mongodb/mongo-php-driver 自行编译
+
+2. mongodb 官方的一个适配器，https://github.com/mongodb/mongo-php-library  这个是因为MongoDBHandler Client的class类型，包会适配旧版mongodb 库的方法
+
+
+> 测试
+
+```php
+Log::channels('custom')->info('test','monogodb log');
+```
